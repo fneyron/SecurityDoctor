@@ -1,0 +1,6 @@
+site_name: SecDoc
+nav:
+        - Home: index.md
+        - Wireless:
+                - Alfa AWUS036ACH: alfa_AWUS036ACH.md
+        - Man in the Middle: MitM.md
