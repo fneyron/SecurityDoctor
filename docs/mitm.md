@@ -133,7 +133,7 @@ net.show
 
 A table with all IP address discovered is displayed. 
 
-![image-20200424151622294](/image-20200424151622294.png)
+![image-20200424151622294](/images/mitm/image-20200424151622294.png)
 
 See the different parameters for arp spoofing:
 
@@ -173,7 +173,7 @@ ip.addr == 192.168.1.68
 
 On the target device open url http://tapriuneclak.com something will show up as below:
 
-![](/images/wireshark_mitm.png)
+![](/images/mitm/wireshark_mitm.png)
 
 
 
@@ -212,7 +212,7 @@ Proto Recv-Q Send-Q Adresse locale          Adresse distante        Etat
 tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN  
 ```
 
-![image-20200424180426765](/image-20200424180426765.png)
+![image-20200424180426765](/images/mitm/image-20200424180426765.png)
 
 Start HTTPS proxy from bettercap:
 
@@ -332,7 +332,7 @@ http-ui
 
 And open a brower to `http://127.0.0.1`
 
-![image-20200424160552505](/image-20200424160552505.png)
+![image-20200424160552505](/images/mitm/image-20200424160552505.png)
 
 !!! warning
     This flaw is not working with HTTPS. HSTS is often activated on most common website (Facebook, instragram, ...) and prevent to access the webpage in HTTP.

@@ -10,9 +10,11 @@ theme:
 markdown_extensions:
   - admonition
 nav:
-        - Home: index.md
-        - Wireless:
-                - Alfa AWUS036ACH: alfa_AWUS036ACH.md
-                - Crack: wireless_crack.md
-        - Man in the Middle: mitm.md
-        - Scan: scan.md
+  - Home: index.md
+  - Wireless:
+    - Alfa AWUS036ACH: alfa_AWUS036ACH.md
+    - Crack: wireless_crack.md
+  - Man in the Middle: mitm.md
+  - Tools: 
+    - NMAP: scan.md
+    - Metasploit: metasploit.md
