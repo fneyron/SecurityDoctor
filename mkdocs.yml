@@ -3,4 +3,7 @@ nav:
         - Home: index.md
         - Wireless:
                 - Alfa AWUS036ACH: alfa_AWUS036ACH.md
-        - Man in the Middle: MitM.md
+                - Crack: wireless_crack.md
+        - Man in the Middle: mitm.md
+        - Scan: scan.md
+        

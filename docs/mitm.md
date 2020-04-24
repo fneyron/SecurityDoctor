@@ -2,19 +2,12 @@
 # MITM 
 In case of a wired network, we should use a Hub to connect on network. 
 This attack is based on a faster answer to DHCPRequest than DHCP server from targeted network. If the server is answering before us a DOS on it could resolve the problem.
-https://www.whitewinterwolf.com/posts/2017/10/30/dhcp-exploitation-guide/
-
-## Alfa AWUS036ACH installation specific
-Follow those instructions:
-	https://github.com/aircrack-ng/rtl8812au
-For 5Ghz network:
-	sudo iw wlan0 set txpower fixed 3000
-	sudo iw wlan0 set channel 6 HT40-
-https://medium.com/@adam.toscher/configure-your-new-wireless-ac-1fb65c6ada57
+More informations here: [https://www.whitewinterwolf.com/posts/2017/10/30/dhcp-exploitation-guide/]()
 
 
 ## Host scan
-- Find host on network: 
+Find host on network: 
+	
 	nmap -sn 192.168.1.0/24
 	Starting Nmap 7.80 ( https://nmap.org ) at 2020-03-22 15:01 CET
 	Nmap scan report for box (192.168.1.1)
@@ -39,24 +32,60 @@ https://medium.com/@adam.toscher/configure-your-new-wireless-ac-1fb65c6ada57
 	Host is up.
 	Nmap done: 256 IP addresses (7 hosts up) scanned in 3.65 seconds
 
-## Ettercap - ARP Poisoning
+## ARP Poisoning
+
+### Ettercap
+
 - Activate ip_forward
+	
+	```
 sysctl -w net.ipv4.ip_forward=1
-- Launch ettercap
-	ettercap -G
+	```
+	
+- Launch ettercap (not from root)
+
+  ```
+  ettercap -G
+  ```
+
 - define Target from menu Target > Select Target:
-	HOST1 = Cible
-	HOST2 = Routeur (ie:192.168.1.1)
+
+  ```
+  HOST1 = Cible
+  HOST2 = Routeur (ie:192.168.1.1)
+  ```
+
 - launch arppoisoning by clicking Start/Stop ARP Poisoning
+
 - Follow connections 
 
+### Bettercap 
 
-## HSTS - HTTP to HTTPS exploit with sslstrip
+
+
+
+
+## DNS Poisoning
+
+
+
+
+
+
+
+
+
+------
+
+## Exploitation
+
+
+### HSTS - HTTP to HTTPS exploit with sslstrip
 https://jlajara.gitlab.io/posts/2019/11/11/HSTS.html
 
 
 
-## Mitmproxy (sslsplit equivalent)
+### Mitmproxy (sslsplit equivalent)
 This solution will not be discret unless you setup the mitm.it ssl certificate on target device. 
 Once certificate is installed the target device connection will appear as secure.
 
@@ -70,7 +99,7 @@ Once certificate is installed the target device connection will appear as secure
 - Navigate to mitm.it with the target device
 
 
-## DNSchef - DNS Poisoning
+### 
 
 
 
