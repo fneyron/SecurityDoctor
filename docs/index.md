@@ -1,3 +1,3 @@
-# SecDoc
+# Home
 
-Home Made documentation for security improvment
+Home Made documentation for security improvment.

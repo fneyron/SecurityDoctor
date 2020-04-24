@@ -1,4 +1,14 @@
-site_name: SecDoc
+site_name: Security Documentation
+theme:
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: 'dracula' 
+  highlightjs: true
+  hljs_languages:
+      - bash
+      - python 
+markdown_extensions:
+  - admonition
 nav:
         - Home: index.md
         - Wireless:
@@ -6,4 +16,3 @@ nav:
                 - Crack: wireless_crack.md
         - Man in the Middle: mitm.md
         - Scan: scan.md
-        
