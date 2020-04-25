@@ -1,4 +1,4 @@
-site_name: Security Documentation
+site_name: Security Doctor
 theme:
   name: null
   custom_dir: 'cinder'
