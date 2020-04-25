@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # Man in the middle
 
 Most of man of the middle attacks has been countered by the apparition of HTTPS and HSTS. Further reading here : [https://medium.com/@munteanu210/ssl-certificates-vs-man-in-the-middle-attacks-3fb7846fa5db](https://medium.com/@munteanu210/ssl-certificates-vs-man-in-the-middle-attacks-3fb7846fa5db)
