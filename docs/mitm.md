@@ -2,13 +2,14 @@
 
 Most of man of the middle attacks has been countered by the apparition of HTTPS and HSTS. Further reading here : [https://medium.com/@munteanu210/ssl-certificates-vs-man-in-the-middle-attacks-3fb7846fa5db](https://medium.com/@munteanu210/ssl-certificates-vs-man-in-the-middle-attacks-3fb7846fa5db)
 
+To check if a website is HSTS protected : [https://hstspreload.org/?domain=facebook.com](https://hstspreload.org/?domain=facebook.com)
+
 Some attack are still made by getting into registrar or social engineering.
 
-For WIFI network ARP Poisoning/DNS Poisoning is the easiest way.
+- For WIFI network ARP Poisoning/DNS Poisoning is the easiest way.
 
-For wired network it's more difficult, most of the switch operate at layer 2/3 and has it's own ARP Table. One common possibility is to MAC Flood the switch using yersinia ARP Table will be filled up and the switch will operate as a HUB.
+- For wired network it's more difficult, most of the switch operate at layer 2/3 and has it's own ARP Table. One common possibility is to MAC Flood the switch using yersinia ARP Table will be filled up and the switch will operate as a HUB. Another way is a DHCP Spoofing attack in order to take precedence on the default network gateway.
 
-Another way is a DHCP Spoofing attack in order to take precedence on the default network gateway.
 
 ## Host scan
 
